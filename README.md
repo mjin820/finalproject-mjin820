@@ -6,5 +6,5 @@ I created a 3-Step Meal Planner where the user can choose a meal type (breakfast
 Installation Process:
 1. Clone the repository
 2. Install dependencies using pip install -r requirements.txt
-3. This project uses an API key from Spoonacular. The key is included in keys.py and imported from .gitignore as a secret key.
+3. This project uses an API key from Spoonacular. The code imports a file called keys.py (create a new file called keys.py) into functions.py with the parameter "apiKey": keys.MY_SECRET_API_KEY. The keys.py file was added to .gitignore and will require an API key to be included in keys.py in this format: MY_SECRET_API_KEY = 'your_api_key_here'. To obtain an API key, go to https://spoonacular.com/food-api/console#Dashboard, sign up for an account, go to MY CONSOLE --> Profile --> Generate New API key
 4. To run Flask app: python app.py --> and access the application in your web browser
