@@ -1,0 +1,119 @@
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FCE697;
+    font-family: "Montserrat";
+}
+/* header */
+h1 {
+    color: #522d62;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #431d54;
+}
+
+/* form */
+form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* input fields */
+input[type="text"], input[type="number"] {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* submit button */
+input[type="submit"] {
+    padding: 30px 30px;
+    background-color: #ffffff;
+    color: #431d54;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* result container */
+.result-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* individual result items */
+.result-item {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    background-color: #895f9b;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* result item image */
+.result-item img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+/* recipe container */
+.recipe-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* recipe card */
+.recipe-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    margin: 20px;
+}
+
+/* recipe title */
+.recipe-card h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* recipe details */
+.recipe-card p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* recipe image */
+.recipe-card img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* view recipe button */
+.recipe-card a {
+    display: block;
+    text-align: center;
+    background-color: #1B0326;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.recipe-card a:hover {
+    background-color: #452a75;
+}
