@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}?v=1.0">
+</head>
+<body>
+    <h1>{{ meal_type }} Options For {{ max_calories }} kcal</h1>
+    <div class='recipe-container'>
+        {% for recipe in recipes %}
+            <div class='recipe-card'>
+                <img src='{{ recipe.image }}' alt='{{ recipe.title }}'>
+                <h2>{{ recipe.title }}</h2>
+                <p>Servings: {{ recipe.servings }}</p>
+                <p>Ready in {{ recipe.readyInMinutes }} minutes</p>
+                <a href='{{ recipe.sourceUrl }}' target='_blank'>View Recipe</a>
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
