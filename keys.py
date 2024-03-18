@@ -1,0 +1,1 @@
+MY_SECRET_API_KEY = "7ddf8b7813204999acaa76bdfa9684bf"
